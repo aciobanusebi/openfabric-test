@@ -7,9 +7,11 @@
       approximately the freshest data;
     - because of this, I am not that sure that I should have used @OneToOne and GET/PUT since sometimes there are
       resources created in the database (hence, maybe a POST method would have worked better)
-- run by calling ```./run.bat```
-- when the app is up and running, open Postman, import the file "openfabric.postman_collection.json", and run the
-  requests
+- how to run:
+  - on Windows, run the app by calling ```./run.bat```
+  - when the app is up and running:
+    - wait ~2 minutes so that the docker service pulls the images (hello-world, mongo) from docker hub
+    - open Postman, import the file "openfabric.postman_collection.json", and run the requests
 
 --------------------------------
 

@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+
+  java-app:
+    container_name: openfabric-api-java-app
+    build: openfabric-api
+    image: openfabric-api-java-image
+    ports:
+      - "8080:8080"
+    depends_on:
+      - docker
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/openfabric
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - DOCKER_HOST=tcp://docker:2375
+
+  db:
+    depends_on:
+      - docker
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: openfabric
+
+  docker:
+    image: docker:18.09-dind
+    privileged: true

@@ -1,0 +1,1653 @@
+{
+  "info": {
+    "_postman_id": "c49d20e4-6960-405d-b738-3dfbc2b81d75",
+    "name": "openfabric",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20219500"
+  },
+  "item": [
+    {
+      "name": "List workers (paginated)",
+      "item": [
+        {
+          "name": "List workers",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List workers",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:12 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"content\": [\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"03410d04f91fd15bfcb21eaa2b151b6e2e279ef3bca4afb4c23f77c21fe0f386\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/cranky_kalam]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"b45fe209b38ce7bf440952df50372cc6ee3eb86bb609610e3115a518da22d7dc\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/focused_roentgen]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"31eb38f3ea8870609a74e2d41b214ea8e7e12f8e7710703268a4fa2170e5ed0c\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/agitated_napier]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"f2fa2f3acfe5a33a7b1085967f888a606e2c27f4a23edbd8e6eeff3fc397ff1c\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/lucid_chatelet]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"docker-entrypoint.sh mongod\",\n            \"created\": \"1683038381\",\n            \"containerId\": \"d94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513\",\n            \"image\": \"mongo:5.0.17\",\n            \"imageId\": \"sha256:28e78cdbd593f856e206ee0932159c907da6ec30c31d6959ddfdabe4e727c0d3\",\n            \"names\": \"[/heuristic_leakey]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=20.04}\",\n            \"status\": \"Exited (0) 7 minutes ago\",\n            \"state\": \"exited\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"660980013\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=a6542bd5125214fbc1a500bfaf83c158301408dfa617a4ae353663cc6cea7bde, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Addre\",\n            \"mounts\": \"[ContainerMount(name=7f2856f1833cccdbd8cf20a816a205ed11dd1eea85a9974fbe5bcd88c1e6bb34, source=, destination=/data/db, driver=local, mode=, rw=true, propagation=), ContainerMount(name=a2c67998db3dda6bde897907a95ed155bf37a91a760021101522eff9eb788fcb, source\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"2e2e0423ce533e0b838307f0965bcdb97cfd740e998be5c20880bce03f3bed00\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/competent_cerf]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"d73325907b90970bc7f359c7b51af4c69e692bb4da7f198294b66c99cc95d284\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/thirsty_meitner]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"937d7387e8e26d2ae7eca3237c5f2ca3d18dfa5d8fe2544dbb02b967241a1253\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/dreamy_bell]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"daeea01178dd561ead1a60de435690d52a7ecb59b2848a3194ec228772ce9b18\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/confident_johnson]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"d7d4da2847ecf05764aead51e1462d2407cf3421551c190f0721db90a4cc2315\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/quirky_kare]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        }\n    ],\n    \"pageNo\": 0,\n    \"pageSize\": 10,\n    \"totalElements\": 11,\n    \"totalPages\": 2,\n    \"last\": false\n}"
+            }
+          ]
+        },
+        {
+          "name": "List workers page 2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker?pageNo=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker"
+              ],
+              "query": [
+                {
+                  "key": "pageNo",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List workers page 2",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker?pageNo=1",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker"
+                  ],
+                  "query": [
+                    {
+                      "key": "pageNo",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:16 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"content\": [\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"03410d04f91fd15bfcb21eaa2b151b6e2e279ef3bca4afb4c23f77c21fe0f386\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/cranky_kalam]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        }\n    ],\n    \"pageNo\": 1,\n    \"pageSize\": 10,\n    \"totalElements\": 11,\n    \"totalPages\": 2,\n    \"last\": true\n}"
+            }
+          ]
+        },
+        {
+          "name": "List workers all",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var arr = pm.response.json()[\"content\"];\r",
+                  "for (var i = 0; i < arr.length; i++) {\r",
+                  "  var obj = arr[i];\r",
+                  "  if(obj[\"image\"].includes(\"mongo\")) {\r",
+                  "      pm.collectionVariables.set(\"worker_id\", obj[\"containerId\"]);\r",
+                  "  }\r",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker?pageSize=11",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "11"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List workers all",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker?pageSize=11",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker"
+                  ],
+                  "query": [
+                    {
+                      "key": "pageSize",
+                      "value": "11"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:19 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"content\": [\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"d73325907b90970bc7f359c7b51af4c69e692bb4da7f198294b66c99cc95d284\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/thirsty_meitner]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"31eb38f3ea8870609a74e2d41b214ea8e7e12f8e7710703268a4fa2170e5ed0c\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/agitated_napier]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"f2fa2f3acfe5a33a7b1085967f888a606e2c27f4a23edbd8e6eeff3fc397ff1c\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/lucid_chatelet]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"937d7387e8e26d2ae7eca3237c5f2ca3d18dfa5d8fe2544dbb02b967241a1253\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/dreamy_bell]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"2e2e0423ce533e0b838307f0965bcdb97cfd740e998be5c20880bce03f3bed00\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/competent_cerf]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"daeea01178dd561ead1a60de435690d52a7ecb59b2848a3194ec228772ce9b18\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/confident_johnson]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"b45fe209b38ce7bf440952df50372cc6ee3eb86bb609610e3115a518da22d7dc\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/focused_roentgen]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"d7d4da2847ecf05764aead51e1462d2407cf3421551c190f0721db90a4cc2315\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/quirky_kare]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"7e59908d6d4b214ba5cf589ae4c6ecee0185105f982876fdeb369f7c463fa0f0\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/ecstatic_benz]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        },\n        {\n            \"command\": \"docker-entrypoint.sh mongod\",\n            \"created\": \"1683038381\",\n            \"containerId\": \"d94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513\",\n            \"image\": \"mongo:5.0.17\",\n            \"imageId\": \"sha256:28e78cdbd593f856e206ee0932159c907da6ec30c31d6959ddfdabe4e727c0d3\",\n            \"names\": \"[/heuristic_leakey]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=20.04}\",\n            \"status\": \"Exited (0) 8 minutes ago\",\n            \"state\": \"exited\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"660980013\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=a6542bd5125214fbc1a500bfaf83c158301408dfa617a4ae353663cc6cea7bde, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Addre\",\n            \"mounts\": \"[ContainerMount(name=7f2856f1833cccdbd8cf20a816a205ed11dd1eea85a9974fbe5bcd88c1e6bb34, source=, destination=/data/db, driver=local, mode=, rw=true, propagation=), ContainerMount(name=a2c67998db3dda6bde897907a95ed155bf37a91a760021101522eff9eb788fcb, source\"\n        },\n        {\n            \"command\": \"/hello\",\n            \"created\": \"1683038380\",\n            \"containerId\": \"03410d04f91fd15bfcb21eaa2b151b6e2e279ef3bca4afb4c23f77c21fe0f386\",\n            \"image\": \"hello-world:linux\",\n            \"imageId\": \"sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412\",\n            \"names\": \"[/cranky_kalam]\",\n            \"ports\": \"[]\",\n            \"labels\": \"{}\",\n            \"status\": \"Created\",\n            \"state\": \"created\",\n            \"sizeRw\": null,\n            \"sizeRootFs\": \"13256\",\n            \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n            \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Address=, globalIPv6PrefixLen=0, macAddress=)})\",\n            \"mounts\": \"[]\"\n        }\n    ],\n    \"pageNo\": 0,\n    \"pageSize\": 11,\n    \"totalElements\": 11,\n    \"totalPages\": 1,\n    \"last\": true\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Get worker information",
+      "item": [
+        {
+          "name": "Get worker",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get worker",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:23 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"command\": \"docker-entrypoint.sh mongod\",\n    \"created\": \"1683038381\",\n    \"containerId\": \"d94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513\",\n    \"image\": \"mongo:5.0.17\",\n    \"imageId\": \"sha256:28e78cdbd593f856e206ee0932159c907da6ec30c31d6959ddfdabe4e727c0d3\",\n    \"names\": \"[/heuristic_leakey]\",\n    \"ports\": \"[]\",\n    \"labels\": \"{org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=20.04}\",\n    \"status\": \"Exited (0) 8 minutes ago\",\n    \"state\": \"exited\",\n    \"sizeRw\": null,\n    \"sizeRootFs\": \"660980013\",\n    \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n    \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=a6542bd5125214fbc1a500bfaf83c158301408dfa617a4ae353663cc6cea7bde, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Addre\",\n    \"mounts\": \"[ContainerMount(name=7f2856f1833cccdbd8cf20a816a205ed11dd1eea85a9974fbe5bcd88c1e6bb34, source=, destination=/data/db, driver=local, mode=, rw=true, propagation=), ContainerMount(name=a2c67998db3dda6bde897907a95ed155bf37a91a760021101522eff9eb788fcb, source\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Start and stop worker",
+      "item": [
+        {
+          "name": "Start worker",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}/start",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}",
+                "start"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Start worker",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}/start",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}",
+                    "start"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:27 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        },
+        {
+          "name": "Get worker",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get worker",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:31 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"command\": \"docker-entrypoint.sh mongod\",\n    \"created\": \"1683038381\",\n    \"containerId\": \"d94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513\",\n    \"image\": \"mongo:5.0.17\",\n    \"imageId\": \"sha256:28e78cdbd593f856e206ee0932159c907da6ec30c31d6959ddfdabe4e727c0d3\",\n    \"names\": \"[/heuristic_leakey]\",\n    \"ports\": \"[]\",\n    \"labels\": \"{org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=20.04}\",\n    \"status\": \"Up Less than a second\",\n    \"state\": \"running\",\n    \"sizeRw\": null,\n    \"sizeRootFs\": \"660980013\",\n    \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n    \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=a6542bd5125214fbc1a500bfaf83c158301408dfa617a4ae353663cc6cea7bde, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Addre\",\n    \"mounts\": \"[ContainerMount(name=7f2856f1833cccdbd8cf20a816a205ed11dd1eea85a9974fbe5bcd88c1e6bb34, source=, destination=/data/db, driver=local, mode=, rw=true, propagation=), ContainerMount(name=a2c67998db3dda6bde897907a95ed155bf37a91a760021101522eff9eb788fcb, source\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Start worker",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}/start",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}",
+                "start"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Start worker",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}/start",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}",
+                    "start"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:36 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Worker with id 'd94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513' is in the 'running' state!\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Stop worker",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}/stop",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}",
+                "stop"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Stop worker",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}/stop",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}",
+                    "stop"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:41 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        },
+        {
+          "name": "Get worker",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get worker",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:46 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"command\": \"docker-entrypoint.sh mongod\",\n    \"created\": \"1683038381\",\n    \"containerId\": \"d94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513\",\n    \"image\": \"mongo:5.0.17\",\n    \"imageId\": \"sha256:28e78cdbd593f856e206ee0932159c907da6ec30c31d6959ddfdabe4e727c0d3\",\n    \"names\": \"[/heuristic_leakey]\",\n    \"ports\": \"[]\",\n    \"labels\": \"{org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=20.04}\",\n    \"status\": \"Exited (0) Less than a second ago\",\n    \"state\": \"exited\",\n    \"sizeRw\": null,\n    \"sizeRootFs\": \"660980013\",\n    \"hostConfig\": \"ContainerHostConfig(networkMode=default)\",\n    \"networkSettings\": \"ContainerNetworkSettings(networks={bridge=ContainerNetwork(ipamConfig=null, links=[], aliases=null, networkID=a6542bd5125214fbc1a500bfaf83c158301408dfa617a4ae353663cc6cea7bde, endpointId=, gateway=, ipAddress=, ipPrefixLen=0, ipV6Gateway=, globalIPv6Addre\",\n    \"mounts\": \"[ContainerMount(name=7f2856f1833cccdbd8cf20a816a205ed11dd1eea85a9974fbe5bcd88c1e6bb34, source=, destination=/data/db, driver=local, mode=, rw=true, propagation=), ContainerMount(name=a2c67998db3dda6bde897907a95ed155bf37a91a760021101522eff9eb788fcb, source\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Stop worker",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}/stop",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}",
+                "stop"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Stop worker",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}/stop",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}",
+                    "stop"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:51 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Worker with id 'd94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513' is not in the 'running' state!\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Get worker statistics",
+      "item": [
+        {
+          "name": "Start worker",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}/start",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}",
+                "start"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Start worker",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}/start",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}",
+                    "start"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:49:58 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        },
+        {
+          "name": "Get statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/workerStatistics/{{worker_id}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "workerStatistics",
+                "{{worker_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get statistics",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/workerStatistics/{{worker_id}}",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "workerStatistics",
+                    "{{worker_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:50:03 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"read\": \"2023-05-02T14:50:03.157615864Z\",\n    \"preread\": \"0001-01-01T00:00:00Z\",\n    \"networks\": \"{eth0=StatisticNetworksConfig(rxBytes=0, rxDropped=0, rxErrors=0, rxPackets=0, txBytes=0, txDropped=0, txErrors=0, txPackets=0)}\",\n    \"memoryStats\": \"MemoryStatsConfig(stats=StatsConfig(activeAnon=4096, activeFile=97894400, cache=104906752, dirty=0, hierarchicalMemoryLimit=9223372036854771712, hierarchicalMemswLimit=9223372036854771712, inactiveAnon=62865408, inactiveFile=7012352, mappedFile=0, pgfault\",\n    \"blkioStats\": \"BlkioStatsConfig(ioServiceBytesRecursive=[], ioServicedRecursive=[], ioQueueRecursive=[], ioServiceTimeRecursive=[], ioWaitTimeRecursive=[], ioMergedRecursive=[], ioTimeRecursive=[], sectorsRecursive=[])\",\n    \"cpuStats\": \"CpuStatsConfig(cpuUsage=CpuUsageConfig(totalUsage=1067486800, percpuUsage=[3648600, 10156800, 13345700, 5918400, 32465600, 23954300, 7965900, 970031500], usageInKernelmode=260000000, usageInUsermode=820000000), systemCpuUsage=673707640000000, onlineCpus=8\",\n    \"numProcs\": \"0\",\n    \"preCpuStats\": \"CpuStatsConfig(cpuUsage=CpuUsageConfig(totalUsage=0, percpuUsage=null, usageInKernelmode=0, usageInUsermode=0), systemCpuUsage=null, onlineCpus=null, throttlingData=ThrottlingDataConfig(periods=0, throttledPeriods=0, throttledTime=0))\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/workerStatistics/{{worker_id}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "workerStatistics",
+                "{{worker_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get statistics",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/workerStatistics/{{worker_id}}",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "workerStatistics",
+                    "{{worker_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:50:09 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"read\": \"2023-05-02T14:50:09.162971021Z\",\n    \"preread\": \"0001-01-01T00:00:00Z\",\n    \"networks\": \"{eth0=StatisticNetworksConfig(rxBytes=0, rxDropped=0, rxErrors=0, rxPackets=0, txBytes=0, txDropped=0, txErrors=0, txPackets=0)}\",\n    \"memoryStats\": \"MemoryStatsConfig(stats=StatsConfig(activeAnon=4096, activeFile=97894400, cache=104906752, dirty=0, hierarchicalMemoryLimit=9223372036854771712, hierarchicalMemswLimit=9223372036854771712, inactiveAnon=62906368, inactiveFile=7012352, mappedFile=0, pgfault\",\n    \"blkioStats\": \"BlkioStatsConfig(ioServiceBytesRecursive=[], ioServicedRecursive=[], ioQueueRecursive=[], ioServiceTimeRecursive=[], ioWaitTimeRecursive=[], ioMergedRecursive=[], ioTimeRecursive=[], sectorsRecursive=[])\",\n    \"cpuStats\": \"CpuStatsConfig(cpuUsage=CpuUsageConfig(totalUsage=1099210700, percpuUsage=[3907700, 18739300, 19330600, 6363200, 33139900, 39626300, 7965900, 970137800], usageInKernelmode=270000000, usageInUsermode=870000000), systemCpuUsage=673755660000000, onlineCpus=8\",\n    \"numProcs\": \"0\",\n    \"preCpuStats\": \"CpuStatsConfig(cpuUsage=CpuUsageConfig(totalUsage=0, percpuUsage=null, usageInKernelmode=0, usageInUsermode=0), systemCpuUsage=null, onlineCpus=null, throttlingData=ThrottlingDataConfig(periods=0, throttledPeriods=0, throttledTime=0))\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Stop worker",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/worker/{{worker_id}}/stop",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "worker",
+                "{{worker_id}}",
+                "stop"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Stop worker",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/worker/{{worker_id}}/stop",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "worker",
+                    "{{worker_id}}",
+                    "stop"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:50:15 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        },
+        {
+          "name": "Get statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/v1/workerStatistics/{{worker_id}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "workerStatistics",
+                "{{worker_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get statistics",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/api/v1/workerStatistics/{{worker_id}}",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "workerStatistics",
+                    "{{worker_id}}"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 02 May 2023 14:50:22 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Worker with id 'd94a7be8ae0e5368e2f1151c86c167f83ee2089084c8d03c448d92bd83faa513' is not in the 'running' state!\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "worker_id",
+      "value": ""
+    }
+  ]
+}
